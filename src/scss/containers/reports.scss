@@ -1,0 +1,272 @@
+.reports {
+  .grid-container {
+    @include themify($themes) {
+      color: themed('colorText');
+    }
+    border-top: 2px solid #36f;
+
+    .ag-pivot-off {
+      background-color: #222b45;
+    }
+    .ag-header-group-cell-label, .ag-header-cell-label {
+      padding: 0 6px;
+    }
+    .ag-header-cell-text {
+      white-space: normal;
+    }
+    .ag-cell {
+      white-space: normal;
+    }
+
+    .ag-paging-panel {
+      border-top: 2px solid #36f;
+      color: #dddddd;
+      height: 32px;
+      padding: 6px 12px 0 12px; }
+    .ag-paging-panel > span {
+      margin-left: 16px; }
+    .ag-paging-page-summary-panel .ag-icon {
+      width: 16px;
+      height: 16px; }
+    .ag-paging-page-summary-panel .ag-paging-button button {
+      cursor: pointer;
+      opacity: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 0; }
+    .ag-paging-page-summary-panel .ag-paging-button.ag-disabled .ag-icon {
+      color: #dddddd;
+      opacity: 0.38; }
+    .ag-paging-page-summary-panel .ag-paging-button.ag-disabled button {
+      cursor: default; }
+    .ag-paging-page-summary-panel span {
+      margin: 0 4px; }
+
+    // icon
+    .ag-icon {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: "agGridBalham";
+      display: block;
+      speak: none;
+      font-size: 16px;
+      color: #dddddd;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .ag-icon-aggregation:before {
+      content: ""; }
+    .ag-icon-arrows:before {
+      content: ""; }
+    .ag-icon-asc:before {
+      content: ""; }
+    .ag-icon-cancel:before {
+      content: ""; }
+    .ag-icon-chart:before {
+      content: ""; }
+    .ag-icon-checkbox-checked:before {
+      content: ""; }
+    .ag-icon-checkbox-indeterminate:before {
+      content: ""; }
+    .ag-icon-checkbox-unchecked:before {
+      content: ""; }
+    .ag-icon-color-picker:before {
+      content: ""; }
+    .ag-icon-column:before {
+      content: ""; }
+    .ag-icon-columns:before {
+      content: ""; }
+    .ag-icon-contracted:before {
+      content: ""; }
+    .ag-icon-copy:before {
+      content: ""; }
+    .ag-icon-cross:before {
+      content: ""; }
+    .ag-icon-cut:before {
+      content: ""; }
+    .ag-icon-data:before {
+      content: ""; }
+    .ag-icon-desc:before {
+      content: ""; }
+    .ag-icon-expanded:before {
+      content: ""; }
+    .ag-icon-eye-slash:before {
+      content: ""; }
+    .ag-icon-eye:before {
+      content: ""; }
+    .ag-icon-filter:before {
+      content: ""; }
+    .ag-icon-first:before {
+      content: ""; }
+    .ag-icon-grip:before {
+      content: ""; }
+    .ag-icon-group:before {
+      content: ""; }
+    .ag-icon-indeterminate:before {
+      content: ""; }
+    .ag-icon-last:before {
+      content: ""; }
+    .ag-icon-left:before {
+      content: ""; }
+    .ag-icon-linked:before {
+      content: ""; }
+    .ag-icon-loading:before {
+      content: ""; }
+    .ag-icon-maximize:before {
+      content: ""; }
+    .ag-icon-menu:before {
+      content: ""; }
+    .ag-icon-minimize:before {
+      content: ""; }
+    .ag-icon-minus:before {
+      content: ""; }
+    .ag-icon-next:before {
+      content: ""; }
+    .ag-icon-none:before {
+      content: ""; }
+    .ag-icon-not-allowed:before {
+      content: ""; }
+    .ag-icon-paste:before {
+      content: ""; }
+    .ag-icon-pin:before {
+      content: ""; }
+    .ag-icon-pivot:before {
+      content: ""; }
+    .ag-icon-plus:before {
+      content: ""; }
+    .ag-icon-previous:before {
+      content: ""; }
+    .ag-icon-radio-button-off:before {
+      content: ""; }
+    .ag-icon-radio-button-on:before {
+      content: ""; }
+    .ag-icon-right:before {
+      content: ""; }
+    .ag-icon-save:before {
+      content: ""; }
+    .ag-icon-small-down:before {
+      content: ""; }
+    .ag-icon-small-left:before {
+      content: ""; }
+    .ag-icon-small-right:before {
+      content: ""; }
+    .ag-icon-small-up:before {
+      content: ""; }
+    .ag-icon-tick:before {
+      content: ""; }
+    .ag-icon-tree-closed:before {
+      content: ""; }
+    .ag-icon-tree-indeterminate:before {
+      content: ""; }
+    .ag-icon-tree-open:before {
+      content: ""; }
+    .ag-icon-unlinked:before {
+      content: ""; }
+    .ag-icon-checkbox-checked,
+    .ag-icon-checkbox-indeterminate,
+    .ag-icon-checkbox-unchecked {
+      background-color: white;
+      line-height: 16px;
+      border-radius: 3px; }
+    .ag-icon-checkbox-checked-readonly,
+    .ag-icon-checkbox-indeterminate-readonly,
+    .ag-icon-checkbox-unchecked-readonly {
+      cursor: default;
+      opacity: 0.38; }
+    .ag-icon-checkbox-checked {
+      color: #0091EA; }
+    .ag-icon-checkbox-checked-readonly:before {
+      content: ""; }
+    .ag-icon-checkbox-indeterminate-readonly:before {
+      content: ""; }
+    .ag-icon-checkbox-unchecked-readonly:before {
+      content: ""; }
+    .ag-icon-row-drag:before {
+      content: ""; }
+    .ag-right-arrow:before {
+      content: ""; }
+    .ag-icon-radio-button-on {
+      color: #0091EA; }
+    .ag-right-arrow:before {
+      content: ""; }
+
+    // row background color
+    .row-bg-color1 {
+      background-color: #192038;
+    }
+    .row-bg-color2 {
+      @include themify($themes) {
+        background-color: themed('colorBackground');
+      }
+    }
+
+    .info-container {
+      padding: 8px 20px 10px 20px;
+
+      .company-icon {
+        margin-top: 8px;
+        width: 45px;
+        max-height: 45px;
+      }
+
+      .col1 {
+        display: flex;
+        .col1-1 {
+          //display: inline-block;
+        }
+        .col1-2 {
+          //display: inline-block;
+          margin-left: 12px;
+          .col1-2-name {
+            margin-bottom: 6px;
+            color: #ffffff;
+            font-size: 20px;
+          }
+          .col1-2-date {
+
+          }
+        }
+      }
+      .col2 {
+        text-align: left;
+        .col2-file {
+          margin-top: 15px;
+          font-size: 15px;
+          color: #ffffff;
+        }
+        .col2-downloads {
+
+        }
+      }
+
+      .companyLink, .downloadLink {
+        color: #ffffff;
+      }
+      .companyLink:hover, .downloadLink:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      .icon-file-pdf {
+        color: #E7505A;
+      }
+      .icon-file-excel {
+        color: #1BA39C;
+      }
+      .icon-file-word {
+        color: #3598DC;
+      }
+      .icon-file-zip {
+        color: #E87E04;
+      }
+      .icon-file-video {
+        color: #05A54B;
+      }
+    }
+  }
+}

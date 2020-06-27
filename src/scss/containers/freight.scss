@@ -1,0 +1,148 @@
+.freight {
+  .filter-container {
+    .card {
+      padding-bottom: 15px;
+    }
+    .card-body {
+      padding: 0.8rem 1.25rem 0.6rem ;
+    }
+
+    .filter-col {
+      display: inline-block;
+      margin: 5px 20px 5px 0;
+
+      .filter-label {
+        @include themify($themes) {
+          color: themed('colorText');
+        }
+      }
+
+      .filter-field {
+        display: inline-block;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .grid-container {
+    @include themify($themes) {
+      color: themed('colorText');
+    }
+    .chart-container {
+      position: relative;
+      font-size: 16px;
+      .chart-rising-up {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: normal;
+        color: #47c37a;
+      }
+      .chart-rising-down {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: normal;
+        color: #e75c4b;
+      }
+    }
+
+    .ag-pivot-off {
+      background-color: #222b45;
+      border-bottom: 1px solid #fff;
+    }
+    .ag-header-group-cell-label, .ag-header-cell-label {
+      padding: 0 6px;
+    }
+    .header-current-month {
+      border-top: solid 1px #274bdb;
+      border-left: solid 1px #274bdb;
+      border-right: solid 1px #274bdb;
+    }
+    .cell-current-month {
+      border-left: solid 1px #274bdb;
+      border-right: solid 1px #274bdb;
+    }
+    .ag-header-cell-text {
+      white-space: normal;
+    }
+    .ag-cell {
+      white-space: normal;
+    }
+    .header-destination .ag-header-cell-label {
+      padding: 0 6px 0 12px !important;
+    }
+    .cell-destination {
+      display: flex;
+      align-items: center;
+      padding: 0 6px 0 12px;
+      font-weight: bold;
+      color: #aeb3cc;
+    }
+    .header-loading-port {}
+    .cell-loading-port {
+      display: flex;
+      align-items: center;
+      padding: 0 6px;
+    }
+    .header-price .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-size .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-size {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-update-date .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-update-date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-volume .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-volume {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-h-chart {}
+    .cell-h-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .row-bg-color1 {
+      background-color: #192038;
+    }
+    .row-bg-color2 {
+      @include themify($themes) {
+        background-color: themed('colorBackground');
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+.tenders {
+  * {
+    user-select: none;
+    outline: none;
+
+    scrollbar-width: none;        /* hide scrollbar (firefox) */
+    -ms-overflow-style: none;     /* hide scrollbar (ie, edge) */
+  }
+
+  /* hide scrollbar (chrome, safari) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-container {
+    .card {
+      padding-bottom: 15px;
+    }
+    .card-body {
+      padding: 0.8rem 1.25rem 0.6rem ;
+    }
+
+    .filter-col {
+      display: inline-block;
+      margin: 5px 20px 5px 0;
+
+      .filter-label {
+        @include themify($themes) {
+          color: themed('colorText');
+        }
+      }
+
+      .filter-field {
+        display: inline-block;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .grid-container {
+    @include themify($themes) {
+      color: themed('colorText');
+    }
+    .chart-container {
+      position: relative;
+      font-size: 16px;
+      .chart-rising-up {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: normal;
+        color: #47c37a;
+      }
+      .chart-rising-down {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: normal;
+        color: #e75c4b;
+      }
+      > canvas {
+        width: 270px !important;
+        height: 65px !important;
+      }
+    }
+
+    .ag-pivot-off {
+      background-color: #222b45;
+      border-bottom: 1px solid #fff;
+    }
+    .ag-header-group-cell-label, .ag-header-cell-label {
+      padding: 0 6px;
+    }
+    .header-current-month {
+      border-top: solid 2px #474d5d;
+      border-left: solid 2px #474d5d;
+      border-right: solid 2px #474d5d;
+    }
+    .cell-current-month {
+      border-left: solid 2px #474d5d;
+      border-right: solid 2px #474d5d;
+    }
+    .ag-header-cell-text {
+      white-space: normal;
+    }
+    .ag-cell {
+      white-space: normal;
+      > span {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .header-destination .ag-header-cell-label {
+      padding: 0 6px 0 12px !important;
+    }
+    .cell-destination {
+      display: flex;
+      align-items: center;
+      padding: 0 6px 0 12px;
+      font-weight: bold;
+      color: #aeb3cc;
+    }
+    .header-loading-port {}
+    .cell-loading-port {
+      display: flex;
+      align-items: center;
+      padding: 0 6px;
+    }
+    .header-price-volume .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-price-volume {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-size .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-size {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+
+    .header-unit .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-unit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+
+    .header-update-date .ag-header-cell-label {
+      display: inline-block;
+      text-align: center;
+    }
+    .cell-update-date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .header-h-chart {}
+    .cell-h-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+    }
+    .row-bg-color1 {
+      background-color: #192038;
+    }
+    .row-bg-color2 {
+      @include themify($themes) {
+        background-color: themed('colorBackground');
+      }
+    }
+    .destination-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .destination-col1 {
+      margin-right: 10px;
+      flex: 1;
+    }
+    .destination-col2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-weight: 400;
+      font-size: 11px;
+    }
+    
+    .ag-row {
+      cursor: pointer;
+    }
+  }
+
+  .btn_search_filter {
+    margin-top: 2px;
+    margin-bottom: 0;
+    height: 42px;
+
+    &.search {
+      background: #398a61 !important;
+      color: #fff;
+      border: 0;
+    }
+
+    &.reset {
+      background: #9b4845 !important;
+      color: #fff;
+      border: 0;
+    }
+  }
+}

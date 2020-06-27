@@ -1,0 +1,43 @@
+@import 'settings/variable';  //themes' colors
+
+//vendor...
+@import './vendor';
+
+//base...
+@import 'generic/normalize.scss';
+@import 'generic/box-sizing.scss';
+@import './base/scaffolding';         // styles of base elements
+@import './base/typography';          // base styles of h1-h6, p, span
+
+//components...
+@import './component/alert';                  // components/Alert.js ('reactstrap')
+@import './component/btn';                    // Button from 'reactstrap'
+@import './component/card';                   // Card, CardBody from 'reactstrap'
+@import './component/check-box';              // components/form/Checkbox.js and other components with checkboxes
+@import './component/dropdown';               //
+@import './component/dropzone';               // components/form/DropZone*.js ('react-dropzone')
+@import './component/sidebar';                // components/sidebar/*
+@import './component/topbar';                 // components/topbar/*
+@import './component/load';
+@import './component/react-select';
+@import './component/form';                   // <form> and all types of inputs
+@import './component/pricing-card';
+@import './component/tabs';                   // Nav, NavItem, NavLink, TabContent, TabPane from 'reactstrap'
+@import './component/material-form';          // for 'material-ui'
+@import './component/modal';                  // components/Modal.js ('reactstrap')
+@import './component/notification';           // components/Notification.js ('reactstrap')
+@import './component/table';                  // components/Table.js ('reactstrap')
+
+//pages...
+@import 'containers/account';
+@import 'containers/profile';
+@import 'containers/freight';
+@import 'containers/tradeflows';
+@import 'containers/tenders';
+@import 'containers/calendar';
+@import 'containers/reports';
+@import 'containers/price-discovery.scss';
+
+//objects...
+@import 'objects/layout.scss';        // layout settings
+
